@@ -307,8 +307,14 @@ html[lang="ar"] .hero h1,html[lang="ar"] .edu-deg,html[lang="ar"] .job-title,
 html[lang="ar"] .course-card.feat .course-name{font-family:'IBM Plex Sans Arabic',sans-serif;font-weight:700}
 
 @media(max-width:860px){
-  .hero-inner{padding:48px 24px 0;gap:24px;justify-content:center;text-align:center}
-  .emblem-wrap{order:3;width:100%;justify-content:center;margin-top:8px}
+  .hero-inner{padding:48px 24px 0;gap:18px;justify-content:center;text-align:center;position:relative}
+  .photo-ring{order:1}
+  .emblem-wrap{
+    order:2;position:absolute;top:48px;
+    inset-inline-end:24px;
+    margin:0;width:auto;
+  }
+  .hero-text{order:3;width:100%}
   .hero-eyebrow{justify-content:center}
   .contact-chips{justify-content:center}
   main{padding:0 24px}
@@ -343,8 +349,8 @@ html[lang="ar"] .course-card.feat .course-name{font-family:'IBM Plex Sans Arabic
   filter:none;
 }
 @media(max-width:860px){
-  .emblem-wrap{margin-inline-start:0;opacity:.5}
-  .saudi-emblem{width:90px}
+  .emblem-wrap{opacity:.6}
+  .saudi-emblem{width:64px}
 }
 </style>
 </head>

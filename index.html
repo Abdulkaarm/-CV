@@ -299,9 +299,11 @@ footer a{color:var(--green);text-decoration:none;font-weight:500}
 .reveal.in{opacity:1;transform:none}
 
 /* LANG VISIBILITY */
-[data-en],[data-ar]{display:none}
-html[lang="en"] [data-en]{display:revert}
-html[lang="ar"] [data-ar]{display:revert}
+[data-en],[data-ar]{display:none!important}
+html[lang="en"] [data-en]{display:unset!important}
+html[lang="ar"] [data-ar]{display:unset!important}
+html[lang="en"] ul[data-en],html[lang="ar"] ul[data-ar]{display:flex!important}
+html[lang="en"] .contact-chips [data-en],html[lang="ar"] .contact-chips [data-ar]{display:inline-flex!important}
 html[lang="ar"] body{font-family:'IBM Plex Sans Arabic',sans-serif}
 html[lang="ar"] .hero h1,html[lang="ar"] .edu-deg,html[lang="ar"] .job-title,
 html[lang="ar"] .course-card.feat .course-name{font-family:'IBM Plex Sans Arabic',sans-serif;font-weight:700}

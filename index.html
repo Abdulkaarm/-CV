@@ -347,7 +347,12 @@ html[lang="ar"] .course-card.feat .course-name{font-family:'IBM Plex Sans Arabic
   nav{padding:0 24px}
   .tl-rule{display:none}
   .job{padding-inline-start:0}
-  .job-dot-wrap{display:none}
+  .job-dot-wrap{
+    display:flex;align-items:center;gap:10px;
+    position:static;width:auto;height:auto;
+    border:none;background:transparent;margin-bottom:10px;
+  }
+  .job-dot-wrap img{width:36px;height:36px;border-radius:8px;border:1.5px solid var(--border)}
   .edu-grid{grid-template-columns:1fr}
   .edu-card.main-edu{grid-column:auto}
   footer{padding:32px 24px}
